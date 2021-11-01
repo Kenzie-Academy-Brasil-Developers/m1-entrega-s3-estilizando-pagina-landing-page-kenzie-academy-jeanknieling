@@ -69,6 +69,7 @@ html{
 
 /* BODY */
 body {
+    text-align: center;
     width: 100%;
     font-family: 'Lato';
 }
@@ -112,7 +113,9 @@ footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+main{
+    margin: 0 auto;
+}
 
 .secaoDestaque {
     background-color: #00043E;
@@ -207,6 +210,42 @@ main{}
 }
 
 
+
+
+
+
+
+
+
+
+/* SEÇÃO CURSOS*/
+.secaoCursos {
+    
+}
+
+.secaoCursos article > p {
+    font-weight: 700;
+}
+
+.secaoCursos h2 {
+    margin-top: 100px;
+    padding: 15px;
+}
+
+.secaoCursos img {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.secaoCursos h3 {
+    font-size: 19px;
+}
+
+.secaoCursos p {
+    font-size: 15px;
+    margin: 25px;
+}
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -221,7 +260,6 @@ main{}
 ::-webkit-resizer{}
 
 /* EXTRAS */
-  
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
