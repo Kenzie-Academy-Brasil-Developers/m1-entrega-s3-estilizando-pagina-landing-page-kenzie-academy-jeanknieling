@@ -46,12 +46,10 @@ div.flex{
     display: flex;
 }
 div.full-container{
-    width: 100%;
     max-width: 1850px;
     margin:0 auto;
 }
 div.large-container{
-    width: 100%;
     max-width: 1170px;
     margin:0 auto;
 }
@@ -272,7 +270,69 @@ main{
 /* EXTRAS */
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) { 
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        .menu {
+            display: none;
+        }
+
+        .large-container {
+            width: 75%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .large-container figure {
+            margin: 0;
+            padding-top: 5px;
+        }
+
+        .large-container img {
+            width: 40px;
+        }
+
+        .large-container ul {
+            display: block;
+            height: 50px;
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .large-container a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .secaoDestaque {
+            text-align: center;
+            height: 400px;
+            background-image: url("../img/background-destaque.webp");
+            background-size:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .secaoDestaque h2 {
+            padding:5px;
+        }
+
+
+        .secaoDestaque p {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .secaoDestaqueFormulario {
+            padding: 0;
+            margin: 10px;
+        }
+
+    }
 /* MEDIA QUERIES */
