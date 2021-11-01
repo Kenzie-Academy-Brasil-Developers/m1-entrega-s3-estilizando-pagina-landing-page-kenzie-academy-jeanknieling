@@ -61,17 +61,39 @@ div.container{
     margin:0 auto;
 }
 /* GERAL */
-  
 /* HTML */
 html{}
 /* HTML */
-  
+
 /* BODY */
-body{}
+body {
+    font-family: 'Lato';
+}
 /* BODY */
+
+h2 {
+    font-family: 'Montserrat';
+}
   
 /* HEADER */
 header{}
+
+/* esconder a legenda da foto */
+header figcaption {
+    display: none;
+}
+
+/* esconder as opções do menu */
+.topo ul {
+    display: none;
+    font-size: 13px;
+}
+
+/* MENU DROPDOWN
+.topo ul:hover {
+    display: block
+} */
+
 /* HEADER */
   
 /* FOOTER */
@@ -80,6 +102,27 @@ footer{}
 
 /* INICIAL */
 main{}
+
+.secaoDestaque h2 {
+    font-size: 63px;
+}
+
+.secaoDestaque p {
+    font-size: 21px;
+}
+
+.secaoDestaque button {
+    font-size: 14px;
+}
+
+.secaoSobre {
+    font-size: 15px;
+}
+
+.secaoSobre h2 {
+    font-size: 19px;
+}
+
 /* INICIAL */
 
 /* EXTRAS */
