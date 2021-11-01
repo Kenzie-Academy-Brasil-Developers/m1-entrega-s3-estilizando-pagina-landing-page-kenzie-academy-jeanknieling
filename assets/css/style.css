@@ -44,6 +44,8 @@ img{
 }
 div.flex{
     display: flex;
+      flex-wrap: wrap;
+    width: 100vw;
 }
 div.full-container{
     width: 100%;
@@ -71,6 +73,7 @@ html{
 body {
     width: 100%;
     font-family: 'Lato';
+    text-align: center;
 }
 /* BODY */
 
@@ -89,7 +92,7 @@ header figcaption {
 }
 
 .logoKenzie {
-    display: inline-block;
+    float: left;
     width: 60px;
     margin-left: 20px;
     padding-top: 15px;
@@ -120,16 +123,17 @@ footer{}
 /* INICIAL */
 main{}
 
+/* ----------------------------------------------- */
 .secaoDestaque {
     background-color: #00043E;
     color: #FFF;
 }
 
 .secaoDestaque h2 {
+    clear: both;
     padding: 0px 40px 17px 40px;
     font-size: 33px;
     font-weight: normal;
-    text-align: center;
 }
 
 .secaoDestaque p {
@@ -170,30 +174,54 @@ main{}
     border: none;
 }
 
-.secaoSobre {
-    font-size: 15px;
-    text-align: left;
+/* ---------------------------------------------------- */
+
+
+.flex-col {
+    width: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
 }
 
-.secaoSobre h2 {
-    font-size: 19px;
+.secaoSobre h2:first-child {
+    width: 240px;
+    margin: 85px auto;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'lato';
     color: #303030;
 }
 
 .secaoSobre p {
+    width: 240px;
+    margin: auto;
+    margin-bottom: 65px;
     font-family: 'lato';
-    font-size: 15px;
+    font-size: 20px;
     color: #303030;
+    text-align: left;
 }
 
-.secaoSobre span {
-    color: #303030;
+.flex-col span {
+    display: inline-block;
+    width: 240px;
+    margin-bottom: 45px;
+    font-family: 'lato';
+    color: #979696;
+    text-align: left;
+    line-height: 26px;
 }
 
 .secaoSobre button {
-    border: 1px #F6F6F6 solid;
-    border-radius: 5px;
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 240px;
+    margin-bottom: 35px;
+    border: 1px #d8d8d8 solid;
+    border-radius: 7px;
     background-color: #FFF;
+    font-size: 17px;
     color: #303030;
     font-family: 'lato';
 }
@@ -207,14 +235,44 @@ main{}
 }
 
 .flex-col .python {
-    width: 300px;
+    width: 240px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .flex-col .js {
-    width: 150px;
+    width: 130px;
     margin: auto;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
+
+.flex-col:last-child h2 {
+    width: 240px;
+    margin: auto;
+    padding-bottom: 60px;
+    text-align: center;
+    
+}
+
+.flex-col ul {
+    width: 210px;
+    padding-left: 15px;
+    margin: auto;
+    list-style-type: disc;
+}
+
+.flex-col li {
+    margin: auto;
+    color: #979696;
+    line-height: 26px;
+    text-align: left;
+}
+
+.flex-col:nth-child(1n + 3) {
+    background-color: #F6F6F6;
+}
+
 
 
 /* INICIAL */
