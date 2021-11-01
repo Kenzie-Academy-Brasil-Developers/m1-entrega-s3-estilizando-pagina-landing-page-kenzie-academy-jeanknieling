@@ -28,9 +28,6 @@ family=Lato -> Títulos, textos
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* FONTS */
 
-/* VARIÁVEIS */
-:root{}
-  
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
@@ -118,15 +115,10 @@ header figcaption {
 /* HEADER */
   
 /* FOOTER */
-footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{
-    margin: 0 auto;
-}
 
-/* ----------------------------------------------- */
 .secaoDestaque {
     background-color: #00043E;
     color: #FFF;
@@ -165,6 +157,11 @@ main{
     color: #F6F6F6;
 }
 
+.secaoDestaqueFormulario input:hover {
+    background-color: #303030;
+}
+
+
 .secaoDestaqueFormulario button {
     height: 35px;
     padding-left: 6%;
@@ -177,7 +174,9 @@ main{
     border: none;
 }
 
-/* ---------------------------------------------------- */
+.secaoDestaqueFormulario button:hover {
+    background-color: #303030;
+}
 
 
 .flex-col {
@@ -210,7 +209,7 @@ main{
     width: 240px;
     margin-bottom: 45px;
     font-family: 'lato';
-    color: #969696;
+    color: #818181;
     text-align: left;
     line-height: 26px;
 }
@@ -227,6 +226,11 @@ main{
     font-size: 17px;
     color: #303030;
     font-family: 'lato';
+}
+
+.secaoSobre button:hover {
+    background-color: #303030;
+    color: #FFF;
 }
 
 .flex-col figcaption {
@@ -268,7 +272,7 @@ main{
 
 .flex-col li {
     margin: auto;
-    color: #9696969696;
+    color: #818181;
     line-height: 26px;
     text-align: left;
 }
@@ -304,6 +308,15 @@ main{
     font-size: 15px;
     margin: 25px;
 }
+
+.seta {
+    padding-top: 100px;
+}
+
+footer p {
+    display: none;
+}
+
 
 /* INICIAL */
 
