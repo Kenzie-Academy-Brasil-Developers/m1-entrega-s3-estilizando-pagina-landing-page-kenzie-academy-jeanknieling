@@ -33,7 +33,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato';
     list-style: none;
 }
 img{
@@ -69,9 +69,7 @@ body {
     text-align: center;
     width: 100%;
     font-family: 'Lato';
-    text-align: center;
 }
-/* BODY */
 
 h2 {
     font-family: 'Montserrat';
@@ -80,6 +78,8 @@ h2 {
 /* HEADER */
 header{
     background-color: #00043e;
+    font-family: 'Munsserrat';
+
 }
 
 /* esconder a legenda da foto */
@@ -96,7 +96,7 @@ header figcaption {
 
 .menu {
     float: right;
-    margin: 10px 20px 0px 0px;
+    margin: 10px 30px 0px 0px;
 }
 
 /* esconder as opções do menu */
@@ -134,7 +134,6 @@ header figcaption {
     padding: 0px 0px 17px 0px;
     margin: auto;
     font-size: 21px;
-    font-family: 'Montserrat';
 }
 
 .secaoDestaqueFormulario {
@@ -166,7 +165,6 @@ header figcaption {
     padding-right: 6%;
     border-radius: 0px 5px 5px 0px;
     font-size: 14px;
-    font-family: 'Montserrat';
     color: #FFF;
     background-color: #007aff;
     border: none;
@@ -187,7 +185,7 @@ header figcaption {
     width: 240px;
     text-align: left;
     font-size: 25px;
-    font-family: 'lato';
+    font-family: 'Montserrat';
     color: #303030;
 }
 
@@ -281,6 +279,7 @@ header figcaption {
 /* SEÇÃO CURSOS*/
 .secaoCursos {
     width: 100%;
+    font-family: 'lato';
 }
 
 .secaoCursos article > p {
@@ -288,6 +287,7 @@ header figcaption {
 }
 
 .secaoCursos h2 {
+
     margin-top: 100px;
     padding: 15px;
 }
@@ -304,6 +304,16 @@ header figcaption {
 .secaoCursos p {
     font-size: 15px;
     margin: 25px;
+    color: #818181;
+}
+
+
+h2 {
+    font-family: 'Montserrat';
+}
+
+body {
+    font-family: 'Lato';
 }
 
 .seta {
@@ -314,20 +324,19 @@ footer p {
     display: none;
 }
 
-
 /* INICIAL */
 
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
+/* ::-webkit-scrollbar{}
 ::-webkit-scrollbar-button{}
 ::-webkit-scrollbar-track{}
 ::-webkit-scrollbar-track-piece{}
 ::-webkit-scrollbar-thumb{}
 ::-webkit-scrollbar-corner{}
 ::-webkit-resizer{}
-
+ */
 /* EXTRAS */
 
 /* MEDIA QUERIES */
@@ -335,6 +344,10 @@ footer p {
     }
   
     @media screen and (min-width: 800px) {
+        main {
+            margin-bottom: 50px;
+        }
+
         .menu {
             display: none;
         }
@@ -381,11 +394,13 @@ footer p {
         }
 
         .secaoDestaque h2 {
+            font-size: 63px;
             padding:5px;
         }
 
 
         .secaoDestaque p {
+            font-size: 21px;
             padding: 0;
             margin: 0;
         }
@@ -393,6 +408,38 @@ footer p {
         .secaoDestaqueFormulario {
             padding: 0;
             margin: 10px;
+        }
+
+        .secaoDestaqueFormulario button {
+            font-size: 14px;
+        }
+
+        .secaoCursos  {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .secaoCursos ul {
+            width: 850px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer {
+            padding: 50px 0;
+        }
+
+        .seta{
+            padding: 0;
+        }
+
+        footer p {
+            display: block;
+            padding-top: 20px;
         }
 
         .secaoDestaqueFormulario input {
