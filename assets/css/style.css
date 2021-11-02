@@ -123,15 +123,16 @@ header figcaption {
 }
 
 .secaoDestaque h2 {
+    width: 250px;
+    margin: 20px auto;
     clear: both;
-    padding: 0px 40px 17px 40px;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: normal;
 }
 
 .secaoDestaque p {
     width: fit-content;
-    padding: 0px 0px 17px 0px;
+    padding: 0px 0px 30px 0px;
     margin: auto;
     font-size: 21px;
 }
@@ -174,17 +175,21 @@ header figcaption {
     background-color: #303030;
 }
 
+.secaoSobre .flex {
+    
+}
 
-.flex-col {
+.secaoSobre .flex-col {
     width: 100%;
     margin: auto;
     padding: 0px 0px 0px 0px;
 }
 
-.secaoSobre h2:first-child {
-    width: 240px;
+.secaoSobre .flex-col:first-child h2 {
+    width: 250px;
+    margin: 100px auto 80px;
     text-align: left;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Montserrat';
     color: #303030;
 }
@@ -199,7 +204,7 @@ header figcaption {
     text-align: left;
 }
 
-.flex-col span {
+.secaoSobre .flex-col span {
     display: inline-block;
     width: 240px;
     margin-bottom: 45px;
@@ -228,11 +233,11 @@ header figcaption {
     color: #FFF;
 }
 
-.flex-col figcaption {
+.secaoSobre .flex-col figcaption {
     display: none;
 }
 
-.flex-col img {
+.secaoSobre .flex-col img {
     width: 100%;
 }
 
@@ -249,15 +254,15 @@ header figcaption {
     padding-bottom: 20px;
 }
 
-.flex-col:last-child h2 {
+.secaoSobre .flex-col:last-child h2 {
     width: 240px;
     margin: auto;
     padding-bottom: 60px;
     text-align: center;
-    
+    color: #303030;
 }
 
-.flex-col ul {
+.secaoSobre .flex-col ul {
     width: 210px;
     padding-left: 15px;
     padding-bottom: 90px;
@@ -265,14 +270,14 @@ header figcaption {
     list-style-type: disc;
 }
 
-.flex-col li {
+.secaoSobre .flex-col li {
     margin: auto;
     color: #818181;
     line-height: 26px;
     text-align: left;
 }
 
-.flex-col:nth-child(1n + 3) {
+.secaoSobre .flex-col:nth-child(1n + 3) {
     background-color: #F6F6F6;
 }
 
@@ -323,6 +328,84 @@ body {
 footer p {
     display: none;
 }
+
+.secaoContato .flex {
+    background-color: #F6F6F6;
+    height: 110vh;
+    align-content: center   ;
+}
+
+.secaoContato .flex-col {
+    width: 200px;
+    margin: auto;
+}
+
+.secaoContato-informacoes h2 {
+    font-family: 'montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+.secaoContato-informacoes li, .secaoContato-informacoes a, .secaoContato-informacoes p {
+    font-family: 'lato';
+    font-size: 13px;
+    text-decoration: none;
+    color: #818181;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.secaoContato-informacoes p {
+    line-height: 24px;
+}
+
+
+.secaoContato div input, .secaoContato div textarea {
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #bbbaba;
+    margin-bottom: 10px;
+}
+
+.secaoContato div input {
+    height: 30px;
+}
+
+.secaoContato textarea {
+    height: 100px;
+}
+
+.secaoContato input:nth-child(4) {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #bbbaba;
+    background-color: #FFF;
+    font-family: 'lato';
+    color: #303030;
+} 
+
+.secaoContato div input:active {
+    border: #303030 2px solid;
+}
+
+.secaoContato input:hover, textarea:hover {
+    background-color: #303030;
+    color: white;
+}
+
+.secaoContato div input::placeholder, .secaoContato div textarea::placeholder {
+    padding: 5px;
+}
+
+/*  coloquei esse flex dentro do form para fazer o botão ficar alinhado a direita */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 
 /* INICIAL */
 
@@ -379,6 +462,7 @@ footer p {
 
         .large-container a {
             color: #FFFFFF;
+            font-family: monospace;
             text-decoration: none;
         }
 
@@ -394,14 +478,16 @@ footer p {
         }
 
         .secaoDestaque h2 {
+            width: fit-content;
             font-size: 63px;
-            padding:5px;
+            padding: 5px;
         }
 
 
         .secaoDestaque p {
             font-size: 21px;
             padding: 0;
+            padding-bottom: 10px;
             margin: 0;
         }
         
@@ -446,80 +532,93 @@ footer p {
             width: 400px;
         }
 
-    
-
-
-
-        /* ---------------------------------------- */
-
-        .flex {
+        .secaoSobre .flex {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             width: 100vw;
             margin: auto;
         }
 
-        .flex-col {
+        .secaoSobre .flex-col {
             width: 50vw;
             text-align: left;
         }
 
-        .flex-col:nth-child(1n + 3) {
+        .secaoSobre .flex-col:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: front-start;
+            padding-left: 150px;
+        }
+
+        .secaoSobre .flex-col:nth-child(1n + 3) {
             padding-top: 50px;
             margin: 0px;
             background-color: #F6F6F6;
         }
 
-        .flex-col:first-child h2 {
-            width: 100%;
-            padding-left: 200px;
-            margin: 90px 0px;
+        .secaoSobre .flex-col:first-child h2 {
+            width: fit-content;
+            margin-left: 0px;
             font-size: 24px;
         }
-
-        .flex-col:last-child h2 {
+        
+        .secaoSobre .flex-col p {
             width: 100%;
-            padding-right: 240px;
-            text-align: left;
-            font-size: 24px;
-        }
-
-        .flex-col p {
-            width: 100%;
-            padding-left: 200px;
             margin: 0px;
+            max-width: 570px;
             font-size: 19px;
         }
-
-        .flex-col span {
-            padding-left: 200px;
+        
+        .secaoSobre .flex-col span {
+            display: block;
+            width: 90%;
+            max-width: 500px;
+            margin: 20px 0px;
             font-size: 15px;
         }
-
-        .flex-col button {
+        
+        
+        .secaoSobre .flex-col button {
             width: 130px;
-            margin-left: 200px;
+            margin: 50px 0px;
         }
-
+        
         .flex-col .python {
-            width: 80%;
-            margin-right: 100px;
+            width: 100%;
+            max-width: 600px;
         }
-
+        
         .flex-col .js {
-            width: 250px;
+            width: 50%;
+            max-width: 275px;
             padding-top: 0px;
         }
-
-        .flex-col ul {
-            width: 100%;
-            margin: 0px;
-            padding-left: 30px;
+        
+        .secaoSobre .flex-col:last-child h2 {
+             width: 100%;
+             text-align: left;
+            font-size: 24px;
         }
 
-        .flex-col li {
+        .secaoSobre .flex-col ul {
+            width: 95%;
+            margin: 0px;
+            padding-left: 30px;
+            padding-bottom: 50px;
+        }
+
+        .secaoSobre .flex-col li {
             font-size: 19px;
         }
 
     }
+
+    @media screen and (min-width: 1440px) {
+        .flex-col:first-child {
+            padding-left: 230px;
+        }
+    }
+
 /* MEDIA QUERIES */
