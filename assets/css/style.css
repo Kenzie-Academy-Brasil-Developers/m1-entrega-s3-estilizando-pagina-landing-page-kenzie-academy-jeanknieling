@@ -165,6 +165,7 @@ header figcaption {
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 0px 5px 5px 0px;
+    font-family: 'lato';
     font-size: 14px;
     color: #FFF;
     background-color: #007aff;
@@ -423,9 +424,7 @@ form {
 /* EXTRAS */
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) { 
-    }
-  
+   
     @media screen and (min-width: 800px) {
         main {
             margin-bottom: 50px;
@@ -549,7 +548,7 @@ form {
             display: flex;
             flex-direction: column;
             align-items: front-start;
-            padding-left: 150px;
+            padding-left: 15%;
         }
 
         .secaoSobre .flex-col:nth-child(1n + 3) {
@@ -589,6 +588,11 @@ form {
             width: 100%;
             max-width: 600px;
         }
+
+        .secaoSobre .flex-col:nth-of-type(2) {
+            padding-right: 12%;
+        }
+
         
         .flex-col .js {
             width: 50%;
@@ -615,9 +619,13 @@ form {
 
     }
 
-    @media screen and (min-width: 1440px) {
-        .flex-col:first-child {
-            padding-left: 230px;
+    @media screen and (min-width: 2560px) {
+        .secaoSobre .flex-col:first-child {
+            padding-left: 500px;
+        }
+
+        .secaoSobre .flex-col:nth-of-type(2) {
+            padding-right: 500px;
         }
     }
 
