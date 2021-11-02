@@ -184,7 +184,7 @@ header figcaption {
 }
 
 .secaoSobre h2:first-child {
-    width: 240px;63px
+    width: 240px;
     text-align: left;
     font-size: 25px;
     font-family: 'lato';
@@ -473,9 +473,6 @@ footer p {
         .flex-col li {
             font-size: 19px;
         }
-
-        
-
 
     }
 /* MEDIA QUERIES */
