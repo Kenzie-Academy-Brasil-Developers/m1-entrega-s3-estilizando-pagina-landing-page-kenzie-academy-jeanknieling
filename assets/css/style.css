@@ -301,6 +301,7 @@ header figcaption {
 
 .secaoCursos h3 {
     font-size: 19px;
+    color: #303030;
 }
 
 .secaoCursos p {
@@ -319,7 +320,7 @@ body {
 }
 
 .seta {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 footer p {
@@ -327,17 +328,18 @@ footer p {
 }
 
 .secaoContato .flex {
+    display: flex;
+    flex-direction: column;
     background-color: #F6F6F6;
-    height: 110vh;
-    align-content: center   ;
+    align-content: center;
+    padding: 50px 0;
 }
 
 .secaoContato .flex-col {
     width: 200px;
-    margin: auto;
 }
 
-.secaoContato-informacoes h2 {
+.secaoContato h2 {
     font-family: 'montserrat';
     font-size: 20px;
     font-weight: 600;
@@ -508,6 +510,8 @@ form {
             justify-content: center;
             justify-content: space-between;
             align-items: center;
+            margin-right: 1%;
+            margin-left: 1%;
         }
 
         footer {
@@ -613,6 +617,46 @@ form {
             font-size: 19px;
         }
 
+        /* SEÇÃO CONTATO */
+        .secaoContato .flex {
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .secaoContato .flex h2 {
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+         }
+
+        .secaoContato  .flex-col{
+            width: fit-content;
+            margin-left: 50px;
+            padding: 20px;
+        }
+
+        .secaoContato form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            width: 500px;
+            margin-right: 10%;
+        }
+
+        .secaoContato form #nome {
+            width: 240px;
+            margin-right: 20px;
+        }
+
+        .secaoContato form #email {
+            width: 240px;
+        }
+
+        .secaoContato form #mensagem {
+            width: 500px;
+        }
     }
 
     @media screen and (min-width: 2560px) {
