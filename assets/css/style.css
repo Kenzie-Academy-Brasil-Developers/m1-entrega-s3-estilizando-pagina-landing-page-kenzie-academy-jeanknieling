@@ -527,6 +527,11 @@ form {
             padding-top: 20px;
         }
 
+        footer a {
+            text-decoration: none;
+            color: #007aff;
+        }
+
         .secaoDestaqueFormulario input {
             width: 400px;
         }
